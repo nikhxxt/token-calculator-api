@@ -153,7 +153,8 @@ curl -X POST https://your-app-url.onrender.com/calculate \
 
 ## 📜 License
 
-This project is open-source and free to use. Attribution appreciated.
+This project is licensed under the MIT License.
+
 ```
 
 ---
