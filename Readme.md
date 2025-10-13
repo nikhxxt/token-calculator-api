@@ -15,6 +15,7 @@ A secure, stateless FastAPI backend that performs basic arithmetic operations us
 - [Features](#-features)
 - [Authentication Flow](#-authentication-flow)
 - [Calculation Endpoint](#-calculation-endpoint)
+- [Live Demo](#-live-demo)
 - [Why JWT Instead of Credentials](#-why-jwt-instead-of-credentials)
 - [Tech Stack](#-tech-stack)
 - [Deployment](#-deployment)
