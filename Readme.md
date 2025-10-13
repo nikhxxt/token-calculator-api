@@ -86,6 +86,17 @@ Authorization: Bearer <JWT_TOKEN>
 
 ---
 
+## 🌐 Live Demo
+
+You can test the API interactively using Swagger UI:
+
+🔗 [Token Calculator API – Swagger Docs](https://token-calculator-api.onrender.com/docs#/default/calculate_calculate_post)
+
+Use the `/login` endpoint to get a JWT token, then authorize and access `/calculate` securely.
+
+---
+
+
 ## 🔐 Why JWT Instead of Credentials?
 
 - **Stateless**: No session storage required
