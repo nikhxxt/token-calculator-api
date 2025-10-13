@@ -153,8 +153,7 @@ curl -X POST https://your-app-url.onrender.com/calculate \
 
 ## 📜 License
 
-This project is licensed under the MIT License.
 
-```
+This project is licensed under the [MIT License](LICENSE).  
 
 ---
