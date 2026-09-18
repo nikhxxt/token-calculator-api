@@ -23,61 +23,76 @@ A FastAPI backend with JWT-based authentication and protected arithmetic operati
 
 ### `POST /login`
 
-Send username and password as form data to receive a JWT access token.
+Send a username and password as form data to receive a JWT access token.
+
+**Request:**
 
 ```text
 username=Bhargav
 password=any
+```
 
-## Response:
+**Response:**
 
+```json
 {
   "access_token": "<JWT_TOKEN>",
   "token_type": "bearer"
 }
-🧮 Calculate
-POST /calculate
+```
+
+## 🧮 Calculate
+
+### `POST /calculate`
 
 Requires a valid JWT Bearer token.
 
-Request:
+**Request:**
 
+```json
 {
   "a": 10,
   "b": 5,
   "operation": "add"
 }
+```
 
-Response:
+**Response:**
 
+```json
 {
   "user": "Bhargav",
   "result": 15
 }
-🌐 Live Demo
-
-Swagger API Documentation:
-
-https://token-calculator-api.onrender.com/docs
-
-Use /login to obtain a JWT token, then click Authorize in Swagger to test the protected /calculate endpoint.
-
-📁 Project Structure
-token-calculator-api/
-├── main.py
-├── requirements.txt
-├── .env
-├── .gitignore
-└── README.md
+```
 
 ## 🔐 How to Test
 
 1. Open the [Swagger Docs](https://token-calculator-api.onrender.com/docs).
 2. Use `POST /login` with a username and password.
 3. Copy the returned `access_token`.
-4. Click **Authorize** 🔒 in Swagger.
-5. Enter:
-   `Bearer <JWT_TOKEN>`
-6. Click **Authorize** and then test `POST /calculate`.
+4. Click **Authorize 🔒** in Swagger.
+5. Enter `Bearer <JWT_TOKEN>`.
+6. Click **Authorize** and test `POST /calculate`.
 
 The `/calculate` endpoint requires a valid JWT token.
+
+## 🌐 Live Demo
+
+**Swagger API Documentation:**  
+https://token-calculator-api.onrender.com/docs
+
+## 📁 Project Structure
+
+```text
+token-calculator-api/
+├── main.py
+├── requirements.txt
+├── .env
+├── .gitignore
+└── README.md
+```
+
+## 📄 License
+
+This project is licensed under the MIT License.
