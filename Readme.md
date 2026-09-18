@@ -88,7 +88,6 @@ https://token-calculator-api.onrender.com/docs
 token-calculator-api/
 ├── main.py
 ├── requirements.txt
-├── .env
 ├── .gitignore
 └── README.md
 ```
